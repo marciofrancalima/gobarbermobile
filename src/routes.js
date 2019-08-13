@@ -37,6 +37,8 @@ export default (isSigned = false) =>
                   Confirm,
                 },
                 {
+                  headerLayoutPreset: 'center', // Center alignment (Android)
+                  headerBackTitleVisible: false, // Hide text back (iOS)
                   defaultNavigationOptions: {
                     headerTransparent: true,
                     headerTintColor: '#fff',
@@ -61,6 +63,7 @@ export default (isSigned = false) =>
             Profile,
           },
           {
+            resetOnBlur: true,
             tabBarOptions: {
               keyboardHidesTabBar: true,
               activeTintColor: '#fff',
